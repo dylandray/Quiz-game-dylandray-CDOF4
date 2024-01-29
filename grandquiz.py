@@ -8,16 +8,16 @@ def GrandQuiz():
     QuestionsFacile = [("Quel est le nom de la capitale de la France ?", "Paris"),("Quel est le nom de la capitale de l'Espagne ?", "Madrid"),("Quel est le nom de la capitale de l'Italie ?", "Rome"),("Quel est le nom de la capitale de l'Allemagne ?", "Berlin"),("Quel est le nom de la capitale de la Belgique ?", "Bruxelles"),("Quel est le nom de la capitale de la Suisse ?", "Berne"),("Quel est le nom de la capitale de la Russie ?", "Moscou"),("Quel est le nom de la capitale de la Chine ?", "Pekin"),("Quel est le nom de la capitale de l'Inde ?", "New Delhi"),("Quel est le nom de la capitale de l'Egypte ?", "Le Caire")]
 
     QuestionsMoyen = [
-        ("Quelle est la capitale de l'Espagne ?", "Madrid"),
-        ("Quelle est la capitale de l'Italie ?", "Rome"),
-        ("Quelle est la capitale du Canada ?", "Ottawa"),
+        ("Quelle est la capitale du Vietnam?", "Hanoï"),
+        ("Quelle est la capitale de la Grèce ?", "Athènes"),
+        ("Quelle est la capitale de l'Angleterre ?", "Londres"),
         ("Quelle est la capitale du Japon ?", "Tokyo"),
         ("Quelle est la capitale de l'Australie ?", "Canberra"),
-        ("Quelle est la capitale de l'Allemagne ?", "Berlin"),
-        ("Quelle est la capitale de la France ?", "Paris"),
-        ("Quelle est la capitale de la Chine ?", "Pékin"),
+        ("Quelle est la capitale du Maroc ?", "Casablanca"),
+        ("Quelle est la capitale de la Corée du Sud ?", "Séoul"),
+        ("Quelle est la capitale du Pérou ?", "Lima"),
         ("Quelle est la capitale du Brésil ?", "Brasília"),
-        ("Quelle est la capitale des États-Unis ?", "Washington, D.C.")
+        ("Quelle est la capitale des États-Unis ?", "Washington D.C")
     ]
 
     QuestionsDures = [
