@@ -2,6 +2,7 @@
 
 
 import random
+import time
 
 
 def GrandQuiz():
@@ -77,19 +78,29 @@ def GrandQuiz():
         print("Le nombre de questions doit être compris entre 1 et 10")
         nbquestions = int(input("Votre choix : "))
 
-    print(nbquestions)
+    print("Chaque question doit être répondue en 10 secondes. Bonne chance !")
     while compteur < nbquestions:
-        compteur+=1
-        x = random.randint(0,len(Questions)-1)
+        compteur += 1
+        x = random.randint(0, len(Questions) - 1)
 
         print(Questions[x][0])
-        reponse = input("Votre réponse : ")
-        if reponse == Questions[x][1]:
-            points +=1
-            print("Bonne réponse")
-            del Questions[x]
-        else: 
-            print("Mauvaise réponse!")
-            del Questions[x]
 
-    print("Vous avez eu "+str(points)+" bonnes réponses!")
+        start_time = time.time()
+        reponse = input("Votre réponse (10 secondes) : ")
+        end_time = time.time()
+
+        # Check if response was given in time
+        if end_time - start_time < 10:
+            if reponse == Questions[x][1]:
+                points += 1
+                print("Bonne réponse")
+            else:
+                print("Mauvaise réponse!")
+        else:
+            print("Temps écoulé !")
+
+        del Questions[x]
+
+    print("Vous avez eu " + str(points) + " bonnes réponses !")
+    
+GrandQuiz()
